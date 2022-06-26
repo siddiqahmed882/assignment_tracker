@@ -1,0 +1,17 @@
+@mixin flexCenter{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@mixin flexStart {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+@mixin mq($size){
+  @media screen and (min-width: $size) {
+    @content
+  }
+}
